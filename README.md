@@ -1,8 +1,8 @@
 PathScroller
 ===============
 
-A Scroller that can compute the "value - time" by a `Path` that extends from Point(0, ±infinite) to (1, ±infinite).  
-The x coordinate along the `Path` is the "time" and the y coordinate is the "value".  
+A Scroller that can compute the "value - time" by a `Path` that extends from Point(0, ±infinite) to (1, ±infinite).
+The x coordinate along the `Path` is the "time" and the y coordinate is the "value".
 Aim to make a complex-velocity scroll effect.  
 The core idea is from `android.support.v4.view.animation.PathInterpolatorCompat`.  
   
@@ -13,7 +13,7 @@ Example
 
 ![iOS_elastic_scrolling.png](https://raw.github.com/Mixiaoxiao/PathScroller/master/pics/iOS_elastic_scrolling.png)
 
-* Create a PathPointsHolder. You are recommended to create a static PathPointsHolder and reuse it by different "valueFactor" because creating the PathPointsHolder may cost some time and memory.
+* Create a `PathPointsHolder`. You are recommended to create a static `PathPointsHolder` and reuse it by different `valueFactor`, because creating the `PathPointsHolder` may cost some time and memory.
 	```java
 		
 		private static final PathPointsHolder sElasticPathPointsHolder = buildElasticPathPointsHolder();
