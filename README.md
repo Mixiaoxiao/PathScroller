@@ -1,8 +1,8 @@
 PathScroller
 ===============
 
-A Scroller that can compute the "value - time" by a Path that extends from Point(0, ±infinite) to (1, ±infinite). 
-The x coordinate along the <code>Path</code> is the "time" and the y coordinate is the "value".
+A Scroller that can compute the "value - time" by a `Path` that extends from Point(0, ±infinite) to (1, ±infinite). 
+The x coordinate along the `Path` is the "time" and the y coordinate is the "value".
 Aim to make a complex-velocity scroll effect.
 The core idea is from android.support.v4.view.animation.PathInterpolatorCompat.
 
@@ -31,10 +31,10 @@ Example
 * Use the PathScroller to scroll.
 	```java
 		PathScroller scroller = new PathScroller();
-		final float velocityY = ...//the velocity your computed 
+		final float velocityY = ...//the velocity you computed 
 		final float overY = velocityY * 0.07f; //compute the max over-scroll y
-		final float baseOverY = 1f;// the baseOverY when you created the PathPointsHolder
-		final float valueFactor = overY / baseOverY;
+		final float baseOverY = 1f;//the baseOverY when you created the PathPointsHolder
+		final float valueFactor = overY / baseOverY;//the valueFactor to "scale" the baseOverY
 		final int duration = 500;//milliseconds
 		scroller.start(valueFactor, duration, sElasticPathPointsHolder); 
 	```
