@@ -1,7 +1,7 @@
 PathScroller
 ===============
 
-A Scroller that can compute the "value - time" by a `Path` that extends from Point(0, ±infinite) to (1, ±infinite).
+A Scroller that can compute the "value - time" by a `Path` that extends from Point (0, ±infinite) to (1, ±infinite).
 The x coordinate along the `Path` is the "time" and the y coordinate is the "value".
 Aim to make a complex-velocity scroll effect.  
 The core idea is from `android.support.v4.view.animation.PathInterpolatorCompat`.  
@@ -42,7 +42,7 @@ Example
 * To track the changing value, use computeScrollOffset. Same as `android.widget.Scroller`, for example:
 	```java
 		if (scroller.computeScrollOffset()) {
-			int value = mScroller.getCurrX();// get current value
+			int value = scroller.getCurrValue();// get current value
 			//handle the value...
 		}
     ```
