@@ -1,11 +1,11 @@
 PathScroller
 ===============
 
-A Scroller that can compute the "value - time" by a `Path` that extends from Point(0, ±infinite) to (1, ±infinite). 
-The x coordinate along the `Path` is the "time" and the y coordinate is the "value".
-Aim to make a complex-velocity scroll effect.
-The core idea is from android.support.v4.view.animation.PathInterpolatorCompat.
-
+A Scroller that can compute the "value - time" by a `Path` that extends from Point(0, ±infinite) to (1, ±infinite).  
+The x coordinate along the `Path` is the "time" and the y coordinate is the "value".  
+Aim to make a complex-velocity scroll effect.  
+The core idea is from `android.support.v4.view.animation.PathInterpolatorCompat`.  
+  
 一个依据Path来映射“数值-时间”关系的Scroller。Path的X轴代表时间，Y轴代表竖直。通过PathScroller可轻松实现速率变化复杂的Scroll效果。
 
 Example 
